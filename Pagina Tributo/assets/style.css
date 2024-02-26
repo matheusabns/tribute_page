@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #F9F4EF;
+    height: 155px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    font-size: 42px;
+    border-bottom: 1px solid #855F43;
+}
+.titulo_descricao {
+    font-size: 20px;
+    color: #876040;
+    margin-top: 0px;
+}
+.conteudo_imagem {
+    height: 750px;
+    background-color: #EADDCF;
+    margin-top: 0;
+    display: flex;
+    background-color: #EADDCF;
+}
+.imagem {
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+.foto_descricao {
+    width: 750px;
+    padding: 15px;
+}
+.conteudo {
+    background-color: #F9F4EF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo_conteudo {
+    font-size: 20px;
+    margin-top: 38px;
+}
+.linha_tempo, .quote {
+    color: #716040;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.tempo {
+    margin: 10px;
+}
+.quote {
+    border-top: 1px solid #716040;
+}
+.rodape {
+    display: flex;
+    background-color: #EADDCF;
+    justify-content: center;
+}
+.texto_rodape {
+    color: #716040;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+@media (max-width: 650px) {
+    
+    .titulo {
+        font-size: 32px;
+    }
+    .container {
+        height: 120px;
+    }
+    .conteudo_imagem {
+        height: auto;
+    }
+    .foto {
+        height: auto;
+    }
+    .foto_descricao {
+        width: auto;
+        font-size: 14px;
+    }
+    .linha_tempo {
+        width: auto;
+    }
+    .quote {
+        width: auto;
+    }
+    .texto_rodape {
+        width: auto;
+
+    }
+}
+@media (max-width: 816px) and (min-width: 650px) {
+
+    .conteudo_imagem {
+        height: auto;
+    }
+    .foto_descricao {
+        width: auto;
+    }
+    
+}
+@media (max-width: 450px) and (min-width: 320px) {
+
+    .conteudo_imagem {
+        height: auto;
+    }
+    .foto_descricao {
+        width: auto;
+        font-size: 12px;
+    }
+    .foto {
+        height: auto;
+    }
+    .titulo {
+        font-size: 22px;
+    }
+    .titulo_descricao {
+        font-size: 14px;
+    }
+    .container {
+        height: 90px;
+    }
+    .titulo_conteudo {
+        height: auto;
+        font-size: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 22px;
+    }
+}
